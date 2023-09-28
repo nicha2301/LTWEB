@@ -29,7 +29,7 @@
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container -->
-            </nav>
+
         </div>
     </div><!-- container -->
     <div class="pixfort_normal_1 creative_video_header" id="section_pix_4">
@@ -38,7 +38,6 @@
                 <video autoplay="" poster="images/video/video_bg.jpg" class="bgvid" loop="">
                     <source src="images/video/video_bg.webm" type="video/webm">
                     <source src="images/video/video_bg.mp4" type="video/mp4">
-                    <source src="images/video/video_bg.ogv" type="video/ogv">
                 </video>
             </div>
             <div class="section_wrapper clearfix">
@@ -56,7 +55,9 @@
                         </div>
                         <div class="email_subscribe pix_builder_bg">
                             <form id="contact_form" pix-confirm="hidden_pix_1">
-                                <input type="email" name="email" placeholder="Enter Your Email" class="pix_text">
+                                <label>
+                                    <input type="email" name="email" placeholder="Enter Your Email" class="pix_text">
+                                </label>
                                 <button class="subscribe_btn pix_text" id="subscribe_btn_1">SUBSCRIBE NOW</button>
 
                             </form>
@@ -119,12 +120,12 @@
                             <div class="clearfix"></div>
                             <form class="contact_form" pix-confirm="hidden_pix_6">
                                 <div id="result"></div>
-                                <input type="text" name="name" id="name" placeholder="Your Full Name" class="pix_text">
-                                <input type="email" name="email" id="email" placeholder="Your Email" class="pix_text">
-                                <input type="text" name="number" id="number" placeholder="Your Phone Number"
-                                       class="pix_text">
+                                <label for="name"></label><input type="text" name="name" id="name" placeholder="Your Full Name" class="pix_text">
+                                <label for="email"></label><input type="email" name="email" id="email" placeholder="Your Email" class="pix_text">
+                                <label for="number"></label><input type="text" name="number" id="number" placeholder="Your Phone Number"
+                                                                   class="pix_text">
                                 <div class="select_st">
-                                    <select id="countries" name="countries" class="pix_text">
+                                    <label for="countries"></label><select id="countries" name="countries" class="pix_text">
                                         <option value="">Select a Country</option>
                                         <option value="Afghanistan">Afghanistan</option>
                                         <option value="Aland Islands">Aland Islands</option>
