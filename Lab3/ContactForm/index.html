@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Us Form</title>
+</head>
+
+<body>
+<div class="container">
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form>
+            <div class="form-group">
+                <input type="text" id="full-name" name="full-name" class="form-control" placeholder="Enter Your Name"
+                >
+                <label for="full-name">Full Name</label>
+            </div>
+            <div class="containerr">
+                <div class="form-group half-width">
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Enter Your Email"
+                    >
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-group half-width">
+                    <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter Your Number Phone"
+                    >
+                    <label for="phone">Phone</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <select id="reason" name="reason" class="form-control">
+                    <option value="" disabled selected>Please Chooses</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="support">Customer Support</option>
+                    <option value="feedback">Feedback</option>
+                </select>
+                <label for="reason">Needed Services</label>
+            </div>
+            <div class="form-group">
+                <textarea id="message" name="message" class="form-control" rows="4" placeholder="Your Messages Here..."
+                ></textarea>
+                <label for="message">Message</label>
+            </div>
+            <div class="form-submit">
+                <button type="submit" class="btn-submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+
+</html>
