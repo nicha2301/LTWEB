@@ -1,0 +1,47 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .start-btn {
+    text-align: center;
+}
+
+.container-btn div {
+    display: inline-grid;
+    height: 60px;
+    width: 60px;
+    margin: 10px;
+}
+
+.container-btn .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    font-weight: bold;
+    color: white;
+}
+
+.disabled {
+    cursor: pointer;
+}
+
+.control {
+    position: absolute;
+    right: 200px;
+}
+
