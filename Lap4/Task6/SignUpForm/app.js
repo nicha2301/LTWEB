@@ -1,26 +1,26 @@
 $(document).ready(function () {
     $('form').validate({
         rules: {
-            'name': {
+            'name-input': {
                 required: true, minlength: 6, maxlength: 50
-            }, 'email': {
+            }, 'email-input': {
                 required: true, maxlength: 255
-            }, 'phone': {
-                required: true, digits: true
+            }, 'password-input': {
+                required: true
             }, 'message': {
                 required: true,
             }, 'reason': {
                 required: true
             }
         }, messages: {
-            'name': {
+            'name-input': {
                 required: "Name can't be blank",
                 minlength: "Name must be more than or equal 6 letters",
                 maxlength: "Name must be less than or equal 50 letters",
-            }, 'email': {
+            }, 'email-input': {
                 required: "Email can't be blank", maxlength: "Email must be less than or equal 255 letters",
-            }, 'phone': {
-                required: "Phone can't be blank", digits: "Please type number only"
+            }, 'password-input': {
+                required: "Phone can't be blank"
             }, 'message': {
                 required: "Please type something"
             }, 'reason': {

@@ -45,16 +45,26 @@ function handleEvent() {
             if (arr.includes(Number(e.target.innerText))) {
                 arr.push(++count)
                 e.target.style.display = 'none'
-                console.log(count)
-                console.log(arr)
             } else {
                 alert('Wrong')
+            }
+            //remove button when all buttons were removed
+            if (arr.length == Number(size.value) + 1) {
+                alert("Congratulations")
+
+                let child = container.lastElementChild
+                while (child) {
+                    container.removeChild(child)
+                    child = container.lastElementChild
+                }
             }
         })
         container.appendChild(wrapperButton)
         wrapperButton.appendChild(button)
     }
+
 }
+
 
 
 
