@@ -14,7 +14,8 @@ function randomColor() {
 
 function randomNum(max, min) {
     let arr = [];
-    for (i = 0; i < max; i++) {
+    let x;
+    for (let i = 0; i < max; i++) {
         x = Math.floor(Math.random() * max) + min;
         if (arr.includes(x) == true) {
             i = i - 1;
@@ -51,6 +52,8 @@ function handleEvent() {
             //remove button when all buttons were removed
             if (arr.length == Number(size.value) + 1) {
                 alert("Congratulations")
+                //set original input after win the game
+                size.value = ''
 
                 let child = container.lastElementChild
                 while (child) {
