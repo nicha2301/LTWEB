@@ -6,17 +6,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+<div class="fail"> Game Over
+    <button class="play-again" onclick="playAgain()">Again</button>
+</div>
 <div class="container">
     <div class="container-btn">
 
     </div>
     <div class="control">
+        <div class="display-controller">
+            <span class="tutorial-step"></span>
+            <br>
+            <span class="chance"></span>
+        </div>
         <input type="text" placeholder="number of boxes">
         <button class="start-btn" onclick="handleEvent()">Start</button>
     </div>
 </div>
-
 </body>
 <script src="app.js"></script>
 </html>
